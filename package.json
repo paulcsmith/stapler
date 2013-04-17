@@ -16,6 +16,9 @@
     "file",
     "uploads"
   ],
-  "author": "Paul Smith <catalystmediastudios@gmail.com>",
+  "author": {
+    "name": "Paul Smith",
+    "email": "catalystmediastudios@gmail.com"
+  },
   "license": "MIT"
 }
