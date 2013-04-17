@@ -1,1 +1,1 @@
-tes.js
+var should = require('should');
