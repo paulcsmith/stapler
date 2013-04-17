@@ -1,10 +1,10 @@
 var should = require('should');
+var fs = require('fs');
+var collectionAttachment = require('../index.js');
 
 describe('Collection Attachment', function(){
   describe('attach(file, collection, id, callback)', function(){
     it('should move original file to the correct default directory', function(done){
-      var fs = require('fs');
-      var collectionAttachment = require('../index.js');
       var path = './test/tmp/pic.jpg';
       fs.createReadStream(path).pipe(fs.createWriteStream(path + '.bkp'));
       var name = 'pic.jpg.bkp';
