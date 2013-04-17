@@ -20,5 +20,12 @@
     "name": "Paul Smith",
     "email": "catalystmediastudios@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "0.x"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
 }
