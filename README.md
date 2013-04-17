@@ -31,3 +31,7 @@ Then in your views you can access it like this
 
 Collection attachment does not do ANYTHING to the model. You must handle that yourself. All that you should need to do is save the filename to your object in Mongo, MySQL or whatever datastore. Then in your view you can easily construct the file path as shown above.
 
+## Testing
+
+In the command line run `mocha test`
+
