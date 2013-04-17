@@ -4,7 +4,7 @@
   "description": "\"Makes it easy to attach files to collections\"",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "should": "*"
+    "should": "*",
+    "fs.extra": "1.x"
   }
 }
