@@ -1,0 +1,21 @@
+{
+  "name": "attach-file",
+  "version": "0.0.0",
+  "description": "\"Makes it easy to attach files to collections\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/catalystmediastudios/collection-attachment.git"
+  },
+  "keywords": [
+    "attachment",
+    "mongoose",
+    "file",
+    "uploads"
+  ],
+  "author": "Paul Smith <catalystmediastudios@gmail.com>",
+  "license": "MIT"
+}
