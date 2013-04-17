@@ -1,6 +1,6 @@
 {
   "name": "attach-file",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "\"Makes it easy to attach files to collections\"",
   "main": "index.js",
   "scripts": {

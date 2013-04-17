@@ -17,19 +17,27 @@ var config = { collection: 'story', id: story.id } // Collection and id are requ
 collectionAttachment.attach(file, config, function (err, new_file) {
   new_file.name; // 'sunset.jpg'
   new_file.path; // './public/uploads/story/123/sunset.jpg';
-  story.photo = new_file.path;
+  // Save the path to the record for future use.
+  story.photo_path = new_file.path;
+  story.save;
 })
 ```
 
 Then in your views you can access it like this
 
 ```html
-<img src="/uploads/story/123/sunset.jpg">
+<img src="/uploads/story/#{story.id}/#{story.photo_path}">
 ```
 
 ## Gotchas
 
 Collection attachment does not do ANYTHING to the model. You must handle that yourself. All that you should need to do is save the filename to your object in Mongo, MySQL or whatever datastore. Then in your view you can easily construct the file path as shown above.
+
+Right now if two files are upload with the same name to the same record the old one will be overwritten
+
+## TODO
+
+* Save files by with timestamp and filename hash so that you can upload multiple files with the same name
 
 ## Testing
 
