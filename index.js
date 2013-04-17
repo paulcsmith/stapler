@@ -12,8 +12,8 @@ exports.attach = function (file, opts, callback) {
   var id = opts.id;
   var tmp_path = file.path; // get the temporary location of the file
   var target_base_path = base_filepath + collection + '/' + id + '/';
-  var target_path = target_base + file.name;
-  makeDirectroyIfDoesNotExist(target_base, function (err) {
+  var target_path = target_base_path + file.name;
+  makeDirectroyIfDoesNotExist(target_base_path, function (err) {
     if (err) {
       callback(err, null);
     } else {
