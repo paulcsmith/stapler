@@ -8,8 +8,12 @@ Because there is no easy to save attached files in a hierarchical way that is si
 
 ## How to use it
 
+First install it
+
+`npm install -g stapler`
+
 ```javascript
-var collectionAttachment = require('../index.js'); // Require the module
+var stapler = require('stapler'); // Require the module
 var story = Story.findById('123'); // Get the record you want to attach the file to
 var file = { path: 'tmp/1298hasdk3hfskjhsdf.file', name: 'sunset.jpg' }; // Normally will be from req.files
 var config = { collection: 'story', id: story.id } // Collection and id are required
