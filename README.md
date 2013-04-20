@@ -18,7 +18,7 @@ var story = Story.findById('123'); // Get the record you want to attach the file
 var file = { path: 'tmp/1298hasdk3hfskjhsdf.file', name: 'sunset.jpg' }; // Normally will be from req.files
 var config = { collection: 'story', id: story.id } // Collection and id are required
 // Will move the file from the tmp location and into './public/uploads/#{collection_name}/#{id}/#{filename}'
-collectionAttachment.attach(file, config, function (err, new_file) {
+stapler.attach(file, config, function (err, new_file) {
   new_file.name; // 'sunset.jpg'
   new_file.path; // './public/uploads/story/123/sunset.jpg';
   // Save the path to the record for future use.
