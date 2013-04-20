@@ -23,6 +23,7 @@ stapler.attach(file, config, function (err, new_file) {
   new_file.path; // './public/uploads/story/123/sunset.jpg';
   // Save the path to the record for future use.
   story.photo_path = new_file.path;
+  story.photo_name = new_file.name;
   story.save;
 })
 ```
@@ -30,7 +31,7 @@ stapler.attach(file, config, function (err, new_file) {
 Then in your views you can access it like this
 
 ```html
-<img src="/uploads/story/#{story.id}/#{story.photo_path}">
+<img src="/uploads/story/#{story.id}/#{story.photo_name}">
 ```
 
 ## Gotchas
