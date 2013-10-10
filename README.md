@@ -48,3 +48,7 @@ Right now if two files are upload with the same name to the same record the old 
 
 In the command line run `mocha test`
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paulcsmith/stapler/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
